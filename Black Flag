@@ -1,0 +1,25 @@
+int days = int.Parse(Console.ReadLine());
+int plounder = int.Parse(Console.ReadLine());
+double expetedPl = double.Parse(Console.ReadLine());
+double totalPl = 0;
+for (int i = 1; i <= days; i++)
+{
+	totalPl += plounder;
+	if (i%3==0)
+	{
+		totalPl += plounder * 0.5;
+	}
+	if (i%5==0)
+	{
+		totalPl -= totalPl * 0.3;
+	}
+}
+if (totalPl>=expetedPl)
+{
+	Console.WriteLine($"Ahoy! {totalPl:F2} plunder gained.");
+}
+else
+{
+	double procentigeLeft = totalPl/expetedPl*100;
+	Console.WriteLine($"Collected only {procentigeLeft:F2}% of the plunder.");
+}
