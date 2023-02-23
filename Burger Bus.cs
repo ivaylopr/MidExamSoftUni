@@ -23,3 +23,4 @@ for (int i = 1; i <= numberOf; i++)
     Console.WriteLine($"In {nameOfTheCity} Burger Bus earned {profCity:F2} leva.");
 }
 Console.WriteLine($"Burger Bus total profit: {totalProfit:F2} leva.");
+System.Console.WriteLine("Try to change");
